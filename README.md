@@ -1,6 +1,7 @@
 Патерни
-Vercel : [---](https://address-book-theta.vercel.app/)
-GitHub : [---](https://github.com/Stanislav-creator-bin-h/Address-Book.git)
+Vercel : https://address-book-theta.vercel.app/
+GitHub : https://github.com/Stanislav-creator-bin-h/Address-Book.git
+
 1. Контейнер/Презентаційний патерн (Container/Presentational)
 Це фундаментальний патерн, який розділяє логіку від вигляду, підвищуючи чистоту коду та можливість тестування.
 Контейнер (App.tsx): Містить всю бізнес-логіку (фільтрацію, додавання, редагування), стан (contacts, editingId) та функції-обробники. Він не займається розміткою таблиці, а лише передає дані та функції вниз.
