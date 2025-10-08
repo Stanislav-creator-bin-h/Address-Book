@@ -1,6 +1,8 @@
-Патерни
 Vercel : https://address-book-theta.vercel.app/
 GitHub : https://github.com/Stanislav-creator-bin-h/Address-Book.git
+
+
+Патерни
 
 1. Патерн Списку (List Pattern)
 Це фундаментальний патерн React, необхідний для відображення колекцій:
