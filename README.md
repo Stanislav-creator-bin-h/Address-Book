@@ -30,4 +30,4 @@ GitHub : https://github.com/Stanislav-creator-bin-h/Address-Book.git
 
 ---
 
-<img width="698" height="603" alt="Screenshot 2025-10-08 131824" src="https://github.com/user-attachments/assets/9b7b95b2-e789-45d8-ade0-de8c87d6e0c6" />
+<img width="1227" height="464" alt="image" src="https://github.com/user-attachments/assets/04b5e152-3918-43e5-bde8-a77acdce232b" />
