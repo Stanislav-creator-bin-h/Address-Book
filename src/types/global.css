@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #4f46e5; 
+  --accent-color: #3b82f6;  
+  --bg-color: #f9fafb;     
+  --card-bg: #ffffff;     
+  --text-color: #374151; 
+  --border-color: #e5e7eb;
+  --error-color: #ef4444;  
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.address-book-app {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.address-book-app h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input[type="text"], 
+input[type="tel"],
+.search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+.search-input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.input-error {
+  border-color: var(--error-color) !important;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.75rem;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: var(--card-bg);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.search-bar {
+  margin-bottom: 30px;
+}
+
+.address-table-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.contact-table thead {
+  background-color: var(--primary-color);
+  color: var(--card-bg);
+}
+
+.contact-table th, 
+.contact-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.contact-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.no-data-message {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius);
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.edit-button {
+  background-color: #facc15;
+  color: var(--text-color);
+}
+
+.save-button {
+  background-color: #10b981; 
+  color: white;
+}
+
+.cancel-button {
+  background-color: var(--error-color); 
+  color: white;
+  margin-left: 5px;
+}
+
+.editing-row td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+}
+
+.editing-row input {
+    padding: 6px;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  .address-book-app {
+    padding: 20px 15px;
+  }
+  
+  .contact-table th, 
+  .contact-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .contact-table th:first-child,
+  .contact-table td:first-child {
+      max-width: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+  .actions button {
+      width: 100%;
+      margin-right: 0;
+  }
+}
